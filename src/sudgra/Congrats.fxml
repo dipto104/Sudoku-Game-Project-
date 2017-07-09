@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="830.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sudgra.CongratsController">
+  <children>
+    <ImageView fitHeight="529.9999866206861" fitWidth="830.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@Congratulations-page(-Sudoku-app)1.jpg" />
+      </image>
+    </ImageView>
+    <Label alignment="CENTER" layoutX="573.0" layoutY="62.0" prefHeight="103.0" prefWidth="225.0" text="Your Score">
+      <font>
+        <Font name="Monotype Corsiva" size="34.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="0.000" green="0.960" red="1.000" fx:id="x4" />
+      </textFill>
+    </Label>
+    <Label fx:id="player" alignment="CENTER" layoutX="544.0" layoutY="200.0" prefHeight="51.0" prefWidth="133.0" text="Label" textFill="#0052cc">
+      <font>
+        <Font name="Monotype Corsiva" size="24.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label fx:id="time" alignment="CENTER" font="$x2" layoutX="691.0" layoutY="200.0" prefHeight="51.0" prefWidth="133.0" text="Label" textFill="RED" />
+    <Button fx:id="back" layoutX="581.0" layoutY="369.0" mnemonicParsing="false" onAction="#actionback" prefHeight="28.0" prefWidth="72.0" text="Back" textFill="#006641">
+      <font>
+        <Font name="Monotype Corsiva" size="18.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Button fx:id="quit" font="$x3" layoutX="742.0" layoutY="369.0" mnemonicParsing="false" onAction="#actionquit" prefHeight="28.0" prefWidth="72.0" text="Quit" textFill="#ff007a" />
+    <Label alignment="CENTER" font="$x1" layoutX="41.0" layoutY="62.0" prefHeight="103.0" prefWidth="225.00009999999747" text="High Score" textFill="$x4" />
+    <Label fx:id="highscore" alignment="TOP_LEFT" layoutX="7.0" layoutY="165.0" prefHeight="351.0" prefWidth="314.0" text="score" textFill="#0c9900">
+      <font>
+        <Font name="System Bold Italic" size="18.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@congrats.css" />
+  </stylesheets>
+</AnchorPane>

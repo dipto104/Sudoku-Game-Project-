@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.250022070315" prefWidth="792.7499389648438" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sudgra.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <ImageView fx:id="sud1" fitHeight="530.25" fitWidth="883.7499780665561" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@sud1.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="play" layoutX="100.0" layoutY="429.0" minHeight="41.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="157.0" text="Play" textFill="#001899">
+      <font>
+        <Font name="Monotype Corsiva" size="24.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="quit" font="$x1" layoutX="343.0" layoutY="429.0" minHeight="48.0" mnemonicParsing="false" onAction="#handlebuttonAction" prefHeight="48.0" prefWidth="157.0" text="Quit" textFill="#006610" />
+    <TextField fx:id="text" layoutX="280.0" layoutY="128.0" onAction="#actiontext" prefHeight="30.0" prefWidth="200.0" promptText="Player name" />
+    <Button fx:id="sub" layoutX="511.0" layoutY="128.0" mnemonicParsing="false" onAction="#actionsub" prefHeight="30.0" prefWidth="95.0" text="Submit" />
+    <MenuButton alignment="CENTER_RIGHT" contentDisplay="CENTER" font="$x1" layoutX="583.0" layoutY="429.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="48.0" prefWidth="157.0" text="Level" textFill="RED">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#actioneasy" text="Easy" fx:id="easy" />
+        <MenuItem mnemonicParsing="false" onAction="#actionmed" text="Medium" fx:id="med" />
+        <MenuItem mnemonicParsing="false" onAction="#actionhard" text="Hard" fx:id="hard" />
+      </items>
+    </MenuButton>
+  </children>
+</AnchorPane>
